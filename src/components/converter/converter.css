@@ -1,0 +1,134 @@
+/* same styles we need include to global css file */
+.main {
+  width: 100%;
+  max-width: 1100px;
+  margin: 15px auto;
+}
+
+.section {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 14%) 0px 1px 2px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  padding: 24px 16px;
+  width: 60%;
+  color: rgb(45, 45, 45);
+  font-family: Roboto, sans-serif, sans-serif;
+  font-size: 14px;
+}
+select {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+.course-place {
+  margin: 10px 0px 18px 0px;
+  display: inline-flex;
+  margin-right: 16px;
+}
+.course-date {
+  margin: 10px 0px 18px 0px;
+  margin-right: auto;
+}
+.section-wrapper__converter {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.calcs-wrapper {
+  /* flex-direction: row; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.calcs-section_wrapper:first-of-type {
+  margin-right: 32px;
+  margin-bottom: 0px;
+}
+.converter-button_wrapper {
+  display: block;
+  position: absolute;
+  top: calc(50% - 24px);
+  right: 16px;
+  left: calc(50% - 24px);
+  right: unset;
+}
+
+.calc-section-input {
+  padding-right: 60px;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: bold;
+  color: rgb(45, 45, 45);
+  border: 0px;
+  outline: 0px;
+  width: 80%;
+}
+
+.converter-button {
+  color: rgba(0, 0, 0, 0.87);
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  z-index: 90;
+  font-size: 0.875rem;
+  min-width: 0;
+  box-shadow: 0px 2px 12px rgb(0 0 0 / 14%);
+  box-sizing: border-box;
+  min-height: 36px;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 50%;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.center {
+  align-items: center;
+}
+
+.calcs-section_wrapper {
+  position: relative;
+  flex: 1 1 0%;
+}
+
+.position {
+  position: relative;
+}
+
+.converter-calc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 110px;
+  padding: 8px 16px 4px;
+  border: 1px solid rgb(205, 215, 231);
+  border-radius: 2px;
+}

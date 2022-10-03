@@ -1,0 +1,171 @@
+.footer {
+  position: relative;
+  background-color: #3e526b;
+  color: #93a4ac;
+  padding: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Open Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0px auto;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.copyright {
+  padding-top: 24px;
+  border-top: 1pxsolidhsla (0, 0%, 100%, 0.1);
+  display: flex;
+}
+
+.footer__right {
+  padding-left: 50px;
+  width: 100%;
+}
+/* same styles we need include to global css file */
+.footer__logo {
+  color: #93a4ac;
+  font-size: 30px;
+  margin-bottom: 10px;
+  order: 1;
+  display: flex;
+  align-items: center;
+  display: inline-block;
+}
+
+.footer__feedback {
+  order: 2;
+}
+
+.footer__socials {
+  order: 3;
+}
+
+.footer__apps {
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 280px;
+  height: 172px;
+  background: #36485e;
+  margin-top: 24px;
+}
+
+.btn_variant_secondary {
+  color: #fff;
+  fill: #fff;
+  background-color: initial;
+  border: 1px solid #fff;
+}
+
+.btn {
+  font-size: 14px;
+  border-radius: 2px;
+  font-family: Raleway, sans-serif;
+  height: 40px;
+  min-width: 40px;
+  padding: 11px 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 32px;
+}
+
+.search__input {
+  padding: 11px 8px 11px 32px;
+  background-color: #36495e;
+  color: #93a4ac;
+  border: 1px solid #36495e;
+  border-radius: 2px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search {
+  display: flex;
+}
+
+.footer__search {
+  margin-bottom: 16px;
+  order: 2;
+  position: relative;
+}
+
+.socials__title {
+  margin: 0 0 10px;
+  font-size: 12px;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.footer__apps {
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 280px;
+  height: 172px;
+  background: #36485e;
+  margin-top: 24px;
+}
+
+.apps__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  margin: 0 0 1rem;
+}
+
+.apps__links {
+  display: block;
+}
+
+.apps__links-image {
+  height: 118px;
+}
+
+.dropdown__item {
+  min-width: 33%;
+  font-size: 12px !important;
+  padding: 4px 0;
+  transition: color 0.3s ease;
+  color: #93a4ac;
+  text-decoration: none;
+}
+
+.dropdown__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.dropdown__btn {
+  font-size: 12px !important;
+  color: #93a4ac;
+  cursor: pointer;
+  background-color: initial;
+  border: none;
+  position: relative;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  padding: 15px 0;
+}

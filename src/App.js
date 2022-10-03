@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import Header from './components/header/header.jsx';
+import Converter from './components/converter/converter.jsx';
+import css from './App.css';
+import Footer from './components/footer/footer.jsx';
+import { AppContext } from './context/russian';
+import { LanguageContext } from './models/languages';
+import CurrencyService from './services/currency';
+import { useState } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider
+      value={{
+        LanguageContext
+      }}
+    >
+      <div className="App">
+        <Header />
+        <Converter />
+        <Footer />
+      </div>
+    </AppContext.Provider>
   );
 }
 

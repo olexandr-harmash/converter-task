@@ -2,6 +2,7 @@ import React from 'react';
 import css from './converter.css';
 
 function Calculator({ rates, value, currency, onChangeValue, onChangeCurrency }) {
+    console.log(rates)
   return (
     <div className="calcs-section_wrapper">
       <div className="position">

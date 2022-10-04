@@ -1,17 +1,30 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import hcss from './header.css';
 import logo from './privat_bank_logo.png';
 import { AppContext } from '../../context/russian';
+import CurrencyService from '../../services/currency';
 
 function Header() {
+
+  let [usdToeur, setUsdToeur] = useState([])
+
   const { LanguageContext } = useContext(AppContext);
-  //simple language-switch realization
+
+  
+  useEffect(async () => {
+    const res = await CurrencyService.fetchUSDToEUR()//await axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
+    console.log(res)
+    setUsdToeur(res)
+  }, []);
+
   return (
     <header className="header">
       <div className="header-top d-flex">
         <div className="header-wrapper d-flex">
           <div className="header-top__bonus">
+            {usdToeur.map(v=><span>{v.cc}:{v.rate}</span>)}
             <span>%</span>
+            {/* {simple language-switch realization} */}
             <a href="#">{LanguageContext.russian.header.bonus}</a>
           </div>
           <a className="logo" href="#">

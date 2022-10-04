@@ -16,8 +16,8 @@ function Converter() {
 
   //better use service for all app, but for simple and add env variables with url value 
   useEffect(async () => {
-    const r = await axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
-    setRates(r.data);
+    const res = await CurrencyService.fetchCurrency()//await axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
+    setRates(res);
   }, []);
   // refactor logic or make own hooks for minimalize code
   function changeLeftValue(value) {

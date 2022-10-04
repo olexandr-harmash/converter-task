@@ -1,19 +1,20 @@
 import axios from 'axios';
 
 class CurrencyService {
-  constructor() {
-    this.currencies = [];
+    constructor(){}
+
+  async fetchCurrency() {
+      //without errors check
+    const res = await axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+    return res.data
   }
 
-  async fetchCurrency(update) {
-    const r = await axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json');
-    this.currencies = r.data;
-    update();
-  }
-
-  getCurrency() {
-    return this.currencies;
-  }
+  async fetchUSDToEUR() {
+    //without errors check
+  const res = await axios.get('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')
+  const cur = res.data.filter(v=>v.cc=="USD" || v.cc=="EUR")
+  return cur
+}
 }
 
-export default new CurrencyService();
+export default new CurrencyService;
